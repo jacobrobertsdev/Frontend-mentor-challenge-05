@@ -307,7 +307,7 @@ footer {
 }
 
 footer .icon {
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
 }
 
 footer p {
@@ -321,7 +321,7 @@ footer p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
   margin-bottom: 0.5rem;
 }
 
@@ -527,7 +527,7 @@ input:invalid {
     line-height: 1.5;
   }
 
-  .location-icon {
-    margin: 0 1.3rem 2rem 0;
-  }
+  /* .location-icon {
+    margin-bottom: 2rem;
+  } */
 }
