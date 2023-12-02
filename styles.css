@@ -10,22 +10,25 @@
   --text: white;
   --body: "Open Sans", sans-serif;
   --headings: "Raleway", sans-serif;
-  --cyan: hsl(176, 68%, 64%);
+  --cyan: #65e2d9;
   --blue: hsl(198, 60%, 50%);
   --red: hsl(0, 100%, 63%);
 }
 
-/* - Dark Blue (footer background): */
-
 * body {
   background-color: var(--main-background);
 }
+
+/*---------MOBILE STYLES---------*/
+
+/*---------NAV CONTENT---------*/
 
 nav {
   position: sticky;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   padding-bottom: 3rem;
 }
@@ -52,6 +55,8 @@ nav a:visited {
 header {
   background-color: var(--intro-email);
 }
+
+/*---------INTRO CONTENT---------*/
 .intro-section {
   background: linear-gradient(
     to bottom,
@@ -69,6 +74,12 @@ header {
   color: var(--text);
   max-width: 80%;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content img {
+  max-width: 80%;
 }
 
 .intro-content h1 {
@@ -96,6 +107,8 @@ header {
   background: linear-gradient(to bottom right, var(--cyan), var(--blue));
 }
 
+/*---------FEATURES CONTENT---------*/
+
 .features-section {
   display: flex;
   flex-direction: column;
@@ -122,11 +135,14 @@ header {
   font-size: 0.8rem;
   font-family: var(--body);
 }
+
+/*---------'PRODUCTIVITY' CONTENT---------*/
+
 .productivity {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   max-width: 85%;
   color: var(--text);
@@ -166,7 +182,10 @@ header {
 .productivity-link {
   padding: 1.2rem 0 0.3rem 0;
   border-bottom: 1px solid var(--cyan);
+  display: inline-block;
 }
+
+/*---------TESTIMONIAL CONTENT---------*/
 
 .testimonials {
   position: relative;
@@ -221,14 +240,17 @@ header {
   left: 2%;
 }
 
+/*---------FOOTER CONTENT---------*/
+
 .email-signup {
-  padding: 2.2rem 1.5rem 2.2rem 1.5rem;
+  padding: 2.2rem 1.8rem 2.2rem 1.8rem;
   background-color: var(--intro-email);
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
   max-width: 90%;
   color: var(--text);
+  margin-bottom: 4rem;
 }
 
 .email-signup h2 {
@@ -238,27 +260,27 @@ header {
 }
 .email-signup p {
   font-family: var(--headings);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
-  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .email-signup input {
-  margin: 0 auto;
   display: block;
-  width: 90%;
+  width: 17rem;
   margin: 0 auto;
-  height: 2.5rem;
+  height: 2.7rem;
   border-radius: 20rem;
   padding-left: 1rem;
   font-family: var(--body);
   font-size: 0.6rem;
+  border: none;
 }
 
 .email-signup button {
-  width: 90%;
+  width: 17rem;
   margin: 0 auto;
-  height: 2.5rem;
+  height: 2.7rem;
   margin-top: 1rem;
   border-radius: 20rem;
   border: none;
@@ -269,6 +291,243 @@ header {
 }
 
 footer {
-  position: relative;
   background: linear-gradient(to top, hsl(0, 0%, 0%), var(--main-background));
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 80%;
+  color: var(--text);
+  font-family: var(--body);
+}
+.footer-logo {
+  display: block;
+  max-width: 10rem;
+  margin-bottom: 3rem;
+}
+
+footer .icon {
+  padding: 0 1rem;
+}
+
+footer p {
+  margin-bottom: 1.3rem;
+  font-size: 1rem;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  margin-top: 3rem;
+}
+
+.footer-links li {
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.footer-links ul li a {
+  color: var(--text);
+  text-decoration: none;
+}
+.footer-links a:visited {
+  color: var(--text);
+}
+
+.list-one ul {
+  margin-top: 5rem;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.social-icons img {
+  text-align: center;
+  max-width: 1.5rem;
+  margin: 0.3rem;
+}
+
+/*---------HOVER - ACTIVE STATES------*/
+
+nav a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+button:hover {
+  background: var(--cyan);
+  cursor: pointer;
+}
+
+.footer-links a:hover {
+  font-weight: 700;
+}
+
+input:invalid {
+  color: (0, 100%, 63%);
+}
+.social-icons img:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(93%) sepia(88%) saturate(519%)
+    hue-rotate(94deg) brightness(93%) contrast(90%);
+}
+
+/*---------MEDIA QUERY - DESKTOP ---------*/
+@media (min-width: 1440px) {
+  nav {
+    padding: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  nav img {
+    max-width: 7rem;
+  }
+
+  .intro-content {
+    max-width: 50%;
+  }
+
+  .intro-content img {
+    padding-top: 4rem;
+    max-width: 40rem;
+  }
+
+  .intro-content p {
+    font-size: 1.4rem;
+  }
+  .intro-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .features-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 60%;
+  }
+
+  .features-section p {
+    font-size: 0.95rem;
+  }
+
+  .security img {
+    max-width: 2.9rem;
+  }
+
+  .productivity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .productivity h2 {
+    display: inline-block;
+    max-width: 60%;
+    font-size: 2.5rem;
+  }
+
+  .productivity p {
+    font-size: 1.2rem;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .testimonials .headshot {
+    max-width: 1.5rem;
+  }
+  .testimonials .review {
+    font-size: 0.9rem;
+  }
+  .testimonials h2 {
+    margin-bottom: 0.2rem;
+  }
+
+  .quotes-icon {
+    max-width: 3rem;
+    top: -9%;
+    left: -0.5%;
+    z-index: -1;
+  }
+
+  .email-signup {
+    max-width: 50%;
+    margin-bottom: 9rem;
+  }
+
+  .email-signup h2 {
+    font-size: 1.5rem;
+  }
+
+  .email-signup input {
+    display: inline-block;
+    max-width: 55%;
+    text-align: left;
+    margin-right: 1rem;
+  }
+  .email-signup button {
+    display: inline-block;
+    max-width: 13rem;
+    margin-top: 0;
+  }
+
+  .email-signup p {
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+  }
+
+  .footer-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    gap: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .list-one,
+  .list-two {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-links ul {
+    margin-top: 0;
+  }
+
+  .social-icons {
+    margin-top: 0;
+  }
+
+  .footer-logo {
+    position: absolute;
+    top: -50%;
+    margin: 0 0 2rem 0;
+  }
+
+  .footer-location {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .location-icon {
+    margin: 0 1.3rem 2rem 0;
+  }
 }
