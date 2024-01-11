@@ -1,11 +1,11 @@
-# Frontend Mentor - Fylo dark theme landing page solution
+🔗 **Live site:** [here](https://jacobrobertsdev.github.io/Landing-Page/)
 
+# Frontend Mentor - Fylo dark theme landing page solution
 This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd).
 
 ## Overview
 
 ### The challenge
-
 Users should be able to:
 
 - View the optimal layout for the site depending on device screen size
@@ -16,7 +16,6 @@ Users should be able to:
 ![](./images/mobile.png)
 ![](./images/desktop.png)
 
-## My process
 
 ### Built with
 
