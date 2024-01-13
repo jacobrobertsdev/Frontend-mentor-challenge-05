@@ -266,7 +266,7 @@ header {
 
 .email-signup input {
   display: block;
-  width: 17rem;
+  width: 100%;
   margin: 0 auto;
   height: 2.7rem;
   border-radius: 20rem;
@@ -277,7 +277,7 @@ header {
 }
 
 .email-signup button {
-  width: 17rem;
+  width: 100%;
   margin: 0 auto;
   height: 2.7rem;
   margin-top: 1rem;
@@ -383,7 +383,15 @@ input:invalid {
 }
 
 /*---------MEDIA QUERY - DESKTOP ---------*/
-@media (min-width: 1440px) {
+
+@media (min-width: 768px) {
+  .email-signup input,
+  .email-signup button {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
   nav {
     padding: 2rem;
   }
@@ -431,6 +439,7 @@ input:invalid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 0.5rem;
   }
 
   .productivity h2 {
