@@ -151,8 +151,7 @@ header {
 }
 .productivity .main {
   padding-bottom: 2rem;
-  max-width: 90%;
-  align-self: center;
+  max-width: 100%;
 }
 
 .productivity h2 {
